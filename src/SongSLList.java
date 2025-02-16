@@ -48,14 +48,14 @@ public class SongSLList {
     }
 
     public static void main(String[] args){
-        System.out.println("Cyberpunk Edgerunners Soundtrack: ");
+        System.out.println("Cult of the Lamb Soundtrack: ");
 
         SongSLList songList = new SongSLList(4);
-        Song song1 = new Song("Let You Down", "Dawid Podsiadlo", 3.47);
-        Song song2 = new Song("Who's Ready for Tomorrow", "Rat Boy, IBDY", 1.56);
-        Song song3 = new Song("This fffire", "Franz Ferdinand", 3.38);
-        Song song4 = new Song("I Really Want to Stay at Your House", "Rosa Walton, Hallie Coggins", 4.06);
-        Song song5 = new Song("Major Crimes", "Health", 4.13);
+        Song song1 = new Song("Praise the Lamb", "River Boy", 6.00);
+        Song song2 = new Song("Start a Cult", "River Boy", 4.59);
+        Song song3 = new Song("Temple", "River Boy", 3.02);
+        Song song4 = new Song("Work and Worship", "River Boy", 5.47);
+        Song song5 = new Song("Faith Up", "River Boy", 2.12);
 
         //add songs to list
         songList.addy(song1);

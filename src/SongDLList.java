@@ -46,14 +46,14 @@ public class SongDLList {
     }
 
     public static void main(String[] args){
-        System.out.println("Cyberpunk Edgerunners Soundtrack: ");
+        System.out.println("Undertale Soundtrack: ");
 
         SongDLList songList = new SongDLList(4);
-        Song song1 = new Song("Let You Down", "Dawid Podsiadlo", 3.47);
-        Song song2 = new Song("Who's Ready for Tomorrow", "Rat Boy, IBDY", 1.56);
-        Song song3 = new Song("This fffire", "Franz Ferdinand", 3.38);
-        Song song4 = new Song("I Really Want to Stay at Your House", "Rosa Walton, Hallie Coggins", 4.06);
-        Song song5 = new Song("Major Crimes", "Health", 4.13);
+        Song song1 = new Song("Waterfall", "Toby Fox", 2.06);
+        Song song2 = new Song("Run!", "Toby Fox", 0.26);
+        Song song3 = new Song("Quiet Water", "Toby Fox", 0.32);
+        Song song4 = new Song("Memory", "Toby Fox", 1.15);
+        Song song5 = new Song("Dummy!", "Toby Fox", 2.25);
 
         //add songs to list
         songList.addy(song1);
