@@ -4,10 +4,6 @@ public class SongAList {
     int maxSize;
     Song[] songList;
 
-    String songTitle;
-    String artist;
-    double length;
-
     public SongAList(int maxSize){
         this.maxSize = maxSize;
         this.songList = new Song[maxSize];
@@ -33,25 +29,17 @@ public class SongAList {
         for(int i = pos; i < size-1; i++){
             songList[i] = songList[i+1];
         }
+        songList[size - 1] = null;
         size--;
     }
 
     public String toString(){
-        StringBuilder sb = new StringBuilder("Song List:\n");
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < size; i++) {
             sb.append(songList[i].toString()).append("\n");
         }
         return sb.toString();
     }
-
-    //Return string containing all elements in AList
-/*    public String toString() {
-        String output = null;
-        for (int i = 0; i < size; i++) {
-            output = "Song[title: " + songTitle + ", artist: " + artist + ", length: " + length + "]";
-        }
-        return output;
-    }*/
 
     public static void main(String[] args){
         System.out.println("Cyberpunk Edgerunners Soundtrack: ");
@@ -63,15 +51,17 @@ public class SongAList {
         Song song4 = new Song("I Really Want to Stay at Your House", "Rosa Walton, Hallie Coggins", 4.06);
         Song song5 = new Song("Major Crimes", "Health", 4.13);
 
-
+        //add songs to list
         songList.addy(song1);
         songList.addy(song2);
         songList.addy(song3);
         songList.addy(song4);
-        songList.addy(song5);
+        songList.addy(song5); //increase list size
+
+        //remove song from list
+        songList.removy(3);
 
         System.out.println(songList);
-
     }
 
 }

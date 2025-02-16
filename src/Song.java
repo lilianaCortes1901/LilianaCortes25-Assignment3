@@ -10,10 +10,8 @@ public class Song{
         this.length = length;
     }
 
-    public static void main(String[] args){
-        Song song = new Song("El Pibe De Mi Barrio", "Dr. Krapula", 2.47);
-        System.out.println("New Song " + song.title + " by " + song.artist + ".");
-        System.out.println("Song lenght: " + song.length);
+    public String toString(){
+        return "Song[title: " + title + ", artist: " + artist + ", length: " + length + "]";
     }
 
 }
