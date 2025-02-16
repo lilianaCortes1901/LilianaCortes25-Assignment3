@@ -7,7 +7,7 @@ public class SongDLList {
         this.songTitle = songTitle;
         this.artist = artist;
         this.length = length;
-        SongDLList songDLList = new SongDLList();
+        //SongDLList songDLList = new SongDLList();
     }
 
     public void addy(SongDLList songDLList){

@@ -7,7 +7,7 @@ public class SongSLList {
         this.songTitle = songTitle;
         this.artist = artist;
         this.length = length;
-        SongSLList songSLList = new SongSLList();
+        //SongSLList songSLList = new SongSLList();
 
     }
 
